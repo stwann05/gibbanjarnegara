@@ -1,0 +1,29 @@
+/* Index Style */
+
+/* Program style */
+
+/* Tentang Style */
+.btn-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: white;
+  border: none;
+}
+
+.btn-instagram:hover {
+  opacity: 0.9;
+  color: white;
+}
+.visi-misi-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("gambar-visi-misi.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Kontak Style */

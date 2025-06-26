@@ -13,7 +13,12 @@
       crossorigin="anonymous"
     />
     <!-- My Css -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
     <title>gibbanjarnegara</title>
   </head>
@@ -22,12 +27,7 @@
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img
-            src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
-            alt="Logo"
-            width="50"
-            height="50"
-          />
+          <img src="assets/logo.png" alt="Logo" width="140px" height="70px" />
         </a>
 
         <!-- Tombol Hamburger -->
@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="main.html">Beranda</a>
+              <a class="nav-link active" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Program</a>
@@ -56,14 +56,21 @@
               <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="kontak.html">Kontak</a>
+              <a class="nav-link" href="#">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-success rounded-pill ms-4 px-5"
+                href="kontak.html"
+                >Kontak</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- navigation end -->
+
     <section
       class="py-5 mt-5"
       style="
@@ -79,29 +86,175 @@
           <div class="col-md-6">
             <h2 class="fw-bold mb-4">Tentang Kami</h2>
             <p>
-              GIB Banjarnegara adalah komunitas belajar yang berfokus pada
-              pengembangan potensi generasi muda. Kami menyediakan ruang
-              kolaborasi, pelatihan, dan proyek sosial untuk menciptakan dampak
-              positif di masyarakat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+              est. Fuga perferendis perspiciatis quos omnis cupiditate,
+              explicabo eaque ullam saepe?
             </p>
             <p>
-              Visi kami adalah menjadikan Banjarnegara sebagai pusat inovasi dan
-              kreativitas di kalangan anak muda. Kami percaya bahwa perubahan
-              dimulai dari aksi nyata, dan kami siap berjalan bersama Anda.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              iste ducimus, quam alias animi mollitia et. Harum architecto ipsum
+              rem.
             </p>
+            <a href="#" class="btn btn-instagram btn-lg mt-3">
+              <i class="bi bi-instagram me-2"></i> Instagram
+            </a>
           </div>
 
           <!-- Kanan: Gambar -->
           <div class="col-md-6 text-center">
             <img
-              src="https://placehold.co/600x400"
+              src="assets/gib web.png"
               alt="Ilustrasi Tentang Kami"
               class="img-fluid rounded shadow"
+              style="max-width: 65%; height: auto"
             />
           </div>
         </div>
       </div>
     </section>
+
+    <section class="visi-misi-section text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Kolom Kiri: Visi -->
+          <div class="col-md-6 mb-4">
+            <h2 class="mb-3">Visi</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              facilis dolore corrupti odio minus hic doloribus iusto suscipit
+              impedit, soluta delectus necessitatibus at mollitia qui. Fugiat
+              suscipit odit molestias tenetur.
+            </p>
+          </div>
+
+          <!-- Kolom Kanan: Misi -->
+          <div class="col-md-6 mb-4">
+            <h2 class="mb-3">Misi</h2>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa!
+              </li>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta.
+              </li>
+              <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Kolom 1: Logo dan Deskripsi -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/logo.png"
+              alt="Logo AVI Humanity"
+              style="height: 40px"
+            />
+            <p class="mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              autem libero delectus quaerat perferendis, ipsum pariatur
+              repellendus blanditiis facere nulla porro perspiciatis nisi
+              provident! Rem rerum qui necessitatibus illo temporibus.
+            </p>
+            <!-- Ikon sosial media -->
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Kolom 2: Perusahaan -->
+          <div class="col-md-4 mb-4">
+            <h5>Perusahaan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Kontak</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Konsultasi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Bantuan -->
+          <div class="col-md-4 mb-4">
+            <h5>Bantuan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Keluhan</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Berita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <!-- Syarat dan Kebijakan -->
+        <div
+          class="d-flex flex-wrap justify-content-center gap-4 text-center small mb-3"
+        >
+          <a href="#" class="text-white text-decoration-none"
+            >Syarat Ketentuan</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Privasi</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Cookie</a
+          >
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="text-center small text-muted">
+          Disclaimer: Kami tidak bertanggung jawab atas konten situs pihak
+          ketiga. Verifikasi informasi dan konsultasikan dengan profesional
+          sebelum mengambil keputusan.
+        </p>
+
+        <!-- Kontak -->
+        <div class="row text-center small mt-4">
+          <div class="col-md-4">
+            <i class="bi bi-geo-alt"></i> Kantor GIB Banjarnegara Jl. Raya
+            Rejasa Banjarnegara
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-envelope"></i> emailgibbanjarnegara@gmail.com
+          </div>
+          <div class="col-md-4"><i class="bi bi-telephone"></i> 0811820196</div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+          <small>© 2025 GIB Banjarnegara. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
