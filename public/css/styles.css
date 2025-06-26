@@ -1,5 +1,13 @@
 /* Index Style */
+.layanan-box:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
 
+.layanan-img img {
+  max-height: 220px;
+  object-fit: contain;
+}
 /* Program style */
 
 /* Tentang Style */
