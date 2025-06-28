@@ -35,3 +35,65 @@
 }
 
 /* Kontak Style */
+
+/* payment style */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.donation-card {
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffffee;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 80px 20px;
+}
+
+.donation-card .card-header {
+  background: linear-gradient(to right, green, #21867a);
+  color: white;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+}
+
+.btn-success {
+  background-color: green;
+  border-color: green;
+}
+
+.btn-success:hover {
+  background-color: #21867a;
+}
+
+nav.navbar {
+  z-index: 2;
+  position: relative;
+}
+
+#riwayat-donasi .list-group-item {
+  background-color: #ffffff;
+  color: #333;
+  transition: background-color 0.3s ease;
+  padding: 1.2rem 1.5rem;
+  font-size: 1.05rem;
+}
+
+#riwayat-donasi .list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+#riwayat-donasi .avatar {
+  width: 48px;
+  height: 48px;
+  font-size: 1.3rem;
+}
