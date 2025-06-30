@@ -6,6 +6,18 @@ function getData() {
       document.getElementById("hasil").textContent = data.message;
     });
 }
+const menuToggle = document.getElementById("menuToggle");
+const navbar = document.querySelector(".navbar");
+const navbarNav = document.getElementById("navbarNav");
+
+// Toggle class saat menu collapse dibuka/ditutup
+navbarNav.addEventListener("shown.bs.collapse", function () {
+  navbar.classList.add("expanded");
+});
+
+navbarNav.addEventListener("hidden.bs.collapse", function () {
+  navbar.classList.remove("expanded");
+});
 
 // Auto-isi nominal dari tombol pilihan
 document.querySelectorAll(".btn-outline-secondary").forEach((button) => {

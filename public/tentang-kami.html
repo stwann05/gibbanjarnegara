@@ -23,8 +23,10 @@
     <title>gibbanjarnegara</title>
   </head>
   <body>
+    <!-- ✅ Navbar (dikeluarkan dari section dan fixed di atas) -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
+      class="navbar navbar-expand-lg fixed-top"
+      style="background: none; border-bottom: 1px solid black"
     >
       <div class="container">
         <!-- Logo -->
@@ -37,40 +39,35 @@
           />
         </a>
 
-        <!-- Tombol Hamburger -->
+        <!-- Hamburger -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu Navigasi -->
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto gap-4">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Beranda</a>
+              <a class="nav-link active text-dark" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="program.html">Program</a>
+              <a class="nav-link text-dark" href="program.html">Program</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-success rounded-pill ms-4 px-5"
-                href="kontak.html"
-                >Kontak</a
+              <a class="nav-link text-dark" href="tentang-kami.html"
+                >Tentang Kami</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link text-dark">Kontak</a>
             </li>
           </ul>
         </div>
@@ -78,11 +75,12 @@
     </nav>
 
     <section
-      class="py-5 mt-5"
+      class="py-5"
       style="
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        margin-top: 6rem !important;
       "
     >
       <div class="container">
@@ -100,7 +98,10 @@
               iste ducimus, quam alias animi mollitia et. Harum architecto ipsum
               rem.
             </p>
-            <a href="#" class="btn btn-instagram btn-lg mt-3">
+            <a
+              href="https://www.instagram.com/gib.banjarnegara/"
+              class="btn btn-instagram btn-lg mt-3"
+            >
               <i class="bi bi-instagram me-2"></i> Instagram
             </a>
           </div>
@@ -113,7 +114,12 @@
               src="assets/gib web.png"
               alt="Ilustrasi Tentang Kami"
               class="img-fluid rounded shadow"
-              style="max-width: 400px; width: 100%; height: auto"
+              style="
+                max-width: 400px;
+                width: 100%;
+                height: auto;
+                border: 1px solid black;
+              "
             />
           </div>
         </div>
@@ -122,7 +128,12 @@
 
     <section
       class="visi-misi-section text-white py-5"
-      style="background-color: #333"
+      style="
+        background: url(assets/1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
     >
       <div class="container">
         <div class="row">

@@ -19,7 +19,8 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
+      class="navbar navbar-expand-lg fixed-top"
+      style="background: none; border-bottom: 1px solid black"
     >
       <div class="container">
         <!-- Logo -->
@@ -32,46 +33,127 @@
           />
         </a>
 
-        <!-- Tombol Hamburger -->
+        <!-- Hamburger -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu Navigasi -->
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto gap-4">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Beranda</a>
+              <a class="nav-link active text-dark" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="program.html">Program</a>
+              <a class="nav-link text-dark" href="program.html">Program</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-success rounded-pill ms-4 px-5"
-                href="kontak.html"
-                >Kontak</a
+              <a class="nav-link text-dark" href="tentang-kami.html"
+                >Tentang Kami</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link text-dark">Kontak</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- navigation end -->
+    <!-- navbar end -->
+
+    <!-- berita -->
+    <section class="py-5 bg-light" style="margin-top: 4rem" id="berita">
+      <div class="container text-center">
+        <h2 class="mb-3 fw-bold">Berita</h2>
+        <p class="mb-5 text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero.
+        </p>
+
+        <div class="row g-4">
+          <!-- Berita 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Berita 1"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>23 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Lorem ipsum dolor sit amet consectetur</h6>
+                <p class="small text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus. Suspendisse lectus.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Berita 2"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>22 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Sed ut perspiciatis unde omnis iste</h6>
+                <p class="small text-muted">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil molestiae.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Berita 3"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>21 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">At vero eos et accusamus et iusto odio</h6>
+                <p class="small text-muted">
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit quo minus.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- berita end -->
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3">

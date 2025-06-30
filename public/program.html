@@ -18,9 +18,8 @@
     <title>gibbanjarnegara</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm"
-    >
+    <!-- ✅ Navbar (dikeluarkan dari section dan fixed di atas) -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: none; border-bottom: 1px solid black;">
       <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
@@ -32,46 +31,141 @@
           />
         </a>
 
-        <!-- Tombol Hamburger -->
+        <!-- Hamburger -->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menu Navigasi -->
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto gap-4">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Beranda</a>
+              <a class="nav-link active text-dark" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="program.html">Program</a>
+              <a class="nav-link text-dark" href="program.html">Program</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="berita.html">Berita</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="btn btn-success rounded-pill ms-4 px-5"
-                href="kontak.html"
-                >Kontak</a
+              <a class="nav-link text-dark" href="tentang-kami.html"
+                >Tentang Kami</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link text-dark">Kontak</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>    
     <!-- navigation end -->
+
+    <section class="py-5 bg-white" style="margin-top: 4rem !important;" id="program">
+      <div class="container text-center">
+        <h2 class="mb-3 fw-bold">Program Kami</h2>
+        <p class="mb-5 text-muted">Gerakan Infaq Beras Banjarnegara</p>
+
+        <div class="row g-4">
+          <!-- Program 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Program 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-2">Berbagi Beras Untuk Para Santri</h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Program 2"
+              />
+              <div class="card-body">
+                <span class="text-muted small"
+                  >Tercapai: <strong>Rp 0</strong></span
+                >
+                <h5 class="card-title mt-2">Berbagi Beras Untuk Anak Yatim</h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="https://placehold.co/400x250"
+                class="card-img-top"
+                alt="Program 3"
+              />
+              <div class="card-body">
+                <span class="text-muted small"
+                  >Tercapai: <strong>Rp 245.002</strong></span
+                >
+                <h5 class="card-title mt-2">
+                  Berbagi Beras Untuk Penghafal Al-Qur'an
+                </h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-3">
