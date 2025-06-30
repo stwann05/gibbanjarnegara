@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <title>gibbanjarnegara</title>
+  </head>
+  <body>
+    <!-- ✅ Navbar (dikeluarkan dari section dan fixed di atas) -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: none">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/GIB LOGO.png"
+            alt="Logo"
+            class="img-fluid"
+            style="max-height: 60px"
+          />
+        </a>
+
+        <!-- Hamburger -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-4">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="tentang-kami.html"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link text-dark">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <section
+      class="d-flex align-items-center justify-content-center text-white text-center"
+      style="
+        height: 100vh;
+        background-image: url('assets/2[1].png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-top: 100px; /* Untuk mencegah konten tertutup navbar */
+      "
+    >
+      <div class="container">
+        <h2>Selamat Datang Di</h2>
+        <h1 class="display-4 fw-bold">
+          GERAKAN INFAK BERAS (GIB) <br />
+          BANJARNEGARA
+        </h1>
+        <p class="lead">
+          <i class="bi bi-geo-alt"></i> Kantor GIB Banjarnegara Jl. Raya Rejasa
+          Banjarnegara
+        </p>
+      </div>
+    </section>
+
+    <!-- program -->
+    <section class="py-5 bg-white" id="program">
+      <div class="container text-center">
+        <h2 class="mb-3 fw-bold">Program Kami</h2>
+        <p class="mb-5 text-muted">Gerakan Infaq Beras Banjarnegara</p>
+
+        <!-- MOBILE: Scroll horizontal -->
+        <div class="d-md-none">
+          <div
+            class="d-flex overflow-auto gap-3 px-2"
+            style="scroll-snap-type: x mandatory"
+          >
+            <!-- Card 1 -->
+            <div
+              class="card flex-shrink-0 shadow-sm border-0"
+              style="width: 80vw; scroll-snap-align: start"
+            >
+              <img
+                src="assets/berita-image/Pp Al-Ridlo.jpg"
+                class="card-img-top"
+                alt="Program 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-2">Berbagi Beras Untuk Para Santri</h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="card flex-shrink-0 shadow-sm border-0"
+              style="width: 80vw; scroll-snap-align: start"
+            >
+              <img
+                src="assets/berita-image/unknown.jpg"
+                class="card-img-top"
+                alt="Program 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-2">
+                  Berbagi Beras Untuk Penghafal Al-Qur'an
+                </h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESKTOP: Grid 2 kolom -->
+        <div class="row g-4 d-none d-md-flex">
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/berita-image/Pp Al-Ridlo.jpg"
+                class="card-img-top"
+                alt="Program 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-2">Berbagi Beras Untuk Para Santri</h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/berita-image/unknown.jpg"
+                class="card-img-top"
+                alt="Program 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-2">
+                  Berbagi Beras Untuk Penghafal Al-Qur'an
+                </h5>
+                <div class="d-flex gap-2 my-3 justify-content-center">
+                  <a href="#" target="_blank" class="text-primary"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-success"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="#" target="_blank" class="text-info"
+                    ><i class="bi bi-telegram"></i
+                  ></a>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill w-100"
+                  >Donasi Program</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lihat Lainnya -->
+        <div class="mt-5">
+          <a href="program.html" class="text-decoration-none fw-semibold"
+            >Lihat Program Lainnya →</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- program end -->
+
+    <!-- berita -->
+    <section class="py-5 bg-light" id="berita">
+      <div class="container text-center">
+        <h2 class="mb-3 fw-bold">Berita</h2>
+        <p class="mb-5 text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+          odio. Praesent libero.
+        </p>
+
+        <!-- Untuk mobile: scroll horizontal -->
+        <div class="d-md-none">
+          <div
+            class="d-flex overflow-auto gap-3 px-2"
+            style="scroll-snap-type: x mandatory"
+          >
+            <!-- Berita 1 -->
+            <div
+              class="card flex-shrink-0 shadow-sm border-0"
+              style="width: 80vw; scroll-snap-align: start"
+            >
+              <img
+                src="assets/berita-image/Pp Al-Ridlo.jpg"
+                class="card-img-top"
+                alt="Berita 1"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>23 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Lorem ipsum dolor sit amet consectetur</h6>
+                <p class="small text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+
+            <!-- Berita 2 -->
+            <div
+              class="card flex-shrink-0 shadow-sm border-0"
+              style="width: 80vw; scroll-snap-align: start"
+            >
+              <img
+                src="assets/berita-image/berbagi.jpg"
+                class="card-img-top"
+                alt="Berita 2"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>22 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Sed ut perspiciatis unde omnis iste</h6>
+                <p class="small text-muted">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+
+            <!-- Berita 3 -->
+            <div
+              class="card flex-shrink-0 shadow-sm border-0"
+              style="width: 80vw; scroll-snap-align: start"
+            >
+              <img
+                src="assets/berita-image/berbagi2.jpg"
+                class="card-img-top"
+                alt="Berita 3"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>21 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">At vero eos et accusamus et iusto odio</h6>
+                <p class="small text-muted">
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Untuk desktop: grid biasa -->
+        <div class="row g-4 d-none d-md-flex">
+          <!-- Berita 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/berita-image/Pp Al-Ridlo.jpg"
+                class="card-img-top"
+                alt="Berita 1"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>23 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Lorem ipsum dolor sit amet consectetur</h6>
+                <p class="small text-muted">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/berita-image/berbagi.jpg"
+                class="card-img-top"
+                alt="Berita 2"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>22 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">Sed ut perspiciatis unde omnis iste</h6>
+                <p class="small text-muted">
+                  Quis autem vel eum iure reprehenderit qui in ea voluptate
+                  velit esse quam nihil.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Berita 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/berita-image/berbagi2.jpg"
+                class="card-img-top"
+                alt="Berita 3"
+              />
+              <div class="card-body">
+                <small class="text-muted"
+                  >Diposting: <strong>21 Juni 2025</strong></small
+                >
+                <h6 class="mt-2">At vero eos et accusamus et iusto odio</h6>
+                <p class="small text-muted">
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit.
+                </p>
+                <a href="#" class="btn btn-success btn-sm rounded-pill w-100"
+                  >Baca Berita</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Link Lainnya -->
+        <div class="mt-5">
+          <a href="#" class="text-decoration-none fw-semibold"
+            >Lihat Berita Lainnya →</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- berita end -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Kolom 1: Logo dan Deskripsi -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/GIB LOGO.png"
+              alt="Logo AVI Humanity"
+              style="height: 40px"
+            />
+            <p class="mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              autem libero delectus quaerat perferendis, ipsum pariatur
+              repellendus blanditiis facere nulla porro perspiciatis nisi
+              provident! Rem rerum qui necessitatibus illo temporibus.
+            </p>
+            <!-- Ikon sosial media -->
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Kolom 2: Perusahaan -->
+          <div class="col-md-4 mb-4">
+            <h5>Perusahaan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Kontak</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Konsultasi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Bantuan -->
+          <div class="col-md-4 mb-4">
+            <h5>Bantuan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Keluhan</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Berita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <!-- Syarat dan Kebijakan -->
+        <div
+          class="d-flex flex-wrap justify-content-center gap-4 text-center small mb-3"
+        >
+          <a href="#" class="text-white text-decoration-none"
+            >Syarat Ketentuan</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Privasi</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Cookie</a
+          >
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="text-center small text-muted">
+          Disclaimer: Kami tidak bertanggung jawab atas konten situs pihak
+          ketiga. Verifikasi informasi dan konsultasikan dengan profesional
+          sebelum mengambil keputusan.
+        </p>
+
+        <!-- Kontak -->
+        <div class="row text-center small mt-4">
+          <div class="col-md-4">
+            <i class="bi bi-geo-alt"></i> Kantor GIB Banjarnegara Jl. Raya
+            Rejasa Banjarnegara
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-envelope"></i> emailgibbanjarnegara@gmail.com
+          </div>
+          <div class="col-md-4"><i class="bi bi-telephone"></i> 0811820196</div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+          <small>© 2025 GIB Banjarnegara. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <!-- Tombol Donasi -->
+    <a href="payment.html" class="chatbot-button" title="Donasi di sini">
+      <img src="assets/donasi.png" alt="donasi" />
+      <span style="color: black">Donasi Di Sini</span>
+    </a>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

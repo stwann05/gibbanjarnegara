@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Halaman Donasi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+      }
+
+      .donation-card {
+        z-index: 1;
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffffee;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        margin: 80px 20px;
+      }
+
+      .donation-card .card-header {
+        background: linear-gradient(to right, #2a9d8f, #21867a);
+        color: white;
+      }
+
+      .form-control,
+      .form-select {
+        border-radius: 8px;
+      }
+
+      .btn-success {
+        background-color: #2a9d8f;
+        border-color: #2a9d8f;
+      }
+
+      .btn-success:hover {
+        background-color: #21867a;
+      }
+
+      nav.navbar {
+        z-index: 2;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm w-100"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/GIB LOGO.png"
+            alt="Logo"
+            width="140px"
+            height="70px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="program.html">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-success rounded-pill ms-4 px-5"
+                href="kontak.html"
+                >Kontak</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <div class="donation-card card">
+      <div class="card-header text-center">
+        <h4>Form Donasi</h4>
+      </div>
+      <div class="card-body p-4">
+        <!-- Pilihan Nominal -->
+        <div class="bg-white rounded p-3 mb-4 shadow-sm">
+          <h5 class="fw-semibold mb-3">Pilih Nominal Donasi</h5>
+
+          <a
+            href="https://amalsholeh.page.link/checkout"
+            target="_blank"
+            class="d-block mb-3 rounded overflow-hidden"
+          >
+            <img
+              src="https://amalsholeh-s3.imgix.net/banner/QP9CJctPsGtDfFSMlkPUYKkmDNyt4Rbhp3vevQhk.png"
+              alt="Banner Donasi"
+              class="img-fluid rounded"
+            />
+          </a>
+
+          <div class="d-grid gap-2">
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 1.900.000</strong></span>
+              <span class="badge bg-primary text-light"
+                >Setara 100 Kg Beras</span
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 380.000</strong></span>
+              <span class="badge bg-primary text-light"
+                >Setara 20 Kg Beras</span
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 330.000</strong></span>
+              <span class="badge bg-primary text-light"
+                >Setara 10 Kg Telur</span
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 230.000</strong></span>
+              <span class="badge bg-primary text-light">5 Kaleng Kornet</span>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 175.000</strong></span>
+              <span class="badge bg-primary text-light">5 Kaleng Sarden</span>
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary text-start d-flex justify-content-between align-items-center"
+            >
+              <span><strong>Rp 150.000</strong></span>
+              <span class="badge bg-primary text-light">3 Minyak 2L</span>
+            </button>
+          </div>
+
+          <div class="mt-4">
+            <label class="form-label fw-bold">Nominal Lainnya</label>
+            <div class="input-group">
+              <span class="input-group-text">Rp</span>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="0"
+                id="amount"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Donasi -->
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama Donatur (opsional)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Anonim atau isi nama kamu"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              >Email (untuk bukti donasi)</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Metode Pembayaran</label>
+            <select class="form-select" id="paymentMethod" required>
+              <option disabled selected>Pilih metode</option>
+              <option value="bank">Transfer Bank</option>
+              <option value="qris">QRIS</option>
+              <option value="ewallet">E-Wallet</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label"
+              >Pesan/Keterangan (opsional)</label
+            >
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Tuliskan doa atau pesan singkat..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">
+            Lanjut ke Pembayaran
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Kolom 1: Logo dan Deskripsi -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="assets/GIB LOGO.png"
+              alt="Logo AVI Humanity"
+              style="height: 40px"
+            />
+            <p class="mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum
+              autem libero delectus quaerat perferendis, ipsum pariatur
+              repellendus blanditiis facere nulla porro perspiciatis nisi
+              provident! Rem rerum qui necessitatibus illo temporibus.
+            </p>
+            <!-- Ikon sosial media -->
+            <div class="d-flex gap-3 fs-5">
+              <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white"><i class="bi bi-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Kolom 2: Perusahaan -->
+          <div class="col-md-4 mb-4">
+            <h5>Perusahaan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Kontak</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Konsultasi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Bantuan -->
+          <div class="col-md-4 mb-4">
+            <h5>Bantuan</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Keluhan</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Berita</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <!-- Syarat dan Kebijakan -->
+        <div
+          class="d-flex flex-wrap justify-content-center gap-4 text-center small mb-3"
+        >
+          <a href="#" class="text-white text-decoration-none"
+            >Syarat Ketentuan</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Privasi</a
+          >
+          <a href="#" class="text-white text-decoration-none"
+            >Kebijakan Cookie</a
+          >
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="text-center small text-muted">
+          Disclaimer: Kami tidak bertanggung jawab atas konten situs pihak
+          ketiga. Verifikasi informasi dan konsultasikan dengan profesional
+          sebelum mengambil keputusan.
+        </p>
+
+        <!-- Kontak -->
+        <div class="row text-center small mt-4">
+          <div class="col-md-4">
+            <i class="bi bi-geo-alt"></i> Kantor GIB Banjarnegara Jl. Raya
+            Rejasa Banjarnegara
+          </div>
+          <div class="col-md-4">
+            <i class="bi bi-envelope"></i> emailgibbanjarnegara@gmail.com
+          </div>
+          <div class="col-md-4"><i class="bi bi-telephone"></i> 0811820196</div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+          <small>© 2025 GIB Banjarnegara. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-gJnu54imm86Gqf4q"
+    ></script>
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

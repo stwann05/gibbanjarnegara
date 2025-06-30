@@ -1,0 +1,191 @@
+/* index style */
+.fixed-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* Gaya tombol hamburger default (putih) */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Hilangkan efek fokus (klik) */
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar.expanded {
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+  color: #000 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover: warna berubah */
+.navbar .nav-link:hover {
+  color: green !important;
+}
+
+/* Aktif: menu Beranda tetap menonjol */
+.navbar .nav-link.active {
+  font-weight: 600;
+  color: black !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  background-color: green;
+  border-radius: 20px;
+  transition: color ease 0.1s;
+}
+.navbar .nav-link.active:hover {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Saat navbar diberi class .scrolled, hamburger berubah jadi hitam */
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Background muncul saat menu mobile terbuka */
+
+/* Tentang Style */
+.btn-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: white;
+  border: none;
+}
+
+.btn-instagram:hover {
+  opacity: 0.9;
+  color: white;
+}
+.visi-misi-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("gambar-visi-misi.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/* Kontak Style */
+
+/* payment style */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.donation-card {
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffffee;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 80px 20px;
+}
+
+.donation-card .card-header {
+  background: linear-gradient(to right, green, #21867a);
+  color: white;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+}
+
+.btn-success {
+  background-color: green;
+  border-color: green;
+}
+
+.chatbot-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(255, 255, 255, 0.1); /* Biru Bootstrap */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chatbot-button:hover {
+  background-color: white;
+  transform: translateY(-5px);
+}
+
+.chatbot-button img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.chatbot-button span {
+  color: black;
+}
+/* responsive */
+
+@media (max-width: 992px) {
+  .logo-img {
+    max-height: 70px;
+  }
+  .chatbot-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+  .chatbot-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(255, 255, 255, 0.1); /* Biru Bootstrap */
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    max-height: 60px;
+  }
+}
