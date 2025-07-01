@@ -104,7 +104,9 @@ app.post("/send-mail", async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
 // === Jalankan Server ===
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server aktif dan mendengarkan di PORT ${PORT}`);
