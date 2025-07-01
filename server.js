@@ -1,4 +1,4 @@
-require("dotenv").config(); // WAJIB di paling atas
+require("dotenv").config(); // HARUS di paling atas
 
 const express = require("express");
 const path = require("path");
@@ -30,6 +30,13 @@ const snap = new midtransClient.Snap({
 app.post("/create-transaction", async (req, res) => {
   const { amount, name, email } = req.body;
 
+  console.log("📥 Data transaksi diterima:", { name, email, amount });
+  console.log("🔑 Server Key tersedia:", !!process.env.MIDTRANS_SERVER_KEY);
+
+  if (!amount || isNaN(amount)) {
+    return res.status(400).json({ error: "Nominal tidak valid." });
+  }
+
   const parameter = {
     transaction_details: {
       order_id: "DONASI-" + Date.now(),
@@ -43,13 +50,15 @@ app.post("/create-transaction", async (req, res) => {
 
   try {
     const transaction = await snap.createTransaction(parameter);
+    console.log("✅ Transaksi berhasil:", transaction);
     res.json({ token: transaction.token });
   } catch (err) {
+    console.error("❌ Gagal membuat transaksi:", err.message);
     res.status(500).json({ error: err.message });
   }
 });
 
-// === Endpoint Webhook/Notifikasi dari Midtrans ===
+// === Endpoint Webhook dari Midtrans ===
 app.post("/notification", async (req, res) => {
   const notificationJson = req.body;
 
@@ -68,8 +77,6 @@ app.post("/notification", async (req, res) => {
     console.log("Status:", statusResponse.transaction_status);
     console.log("Payment Type:", statusResponse.payment_type);
 
-    // Kamu bisa tambah: simpan ke DB, kirim email, dll
-
     res.status(200).send("OK");
   } catch (err) {
     console.error("❌ Error notifikasi:", err.message);
@@ -82,7 +89,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    pass: process.env.EMAIL_PASS, // gunakan App Password
   },
 });
 
@@ -99,23 +106,28 @@ app.post("/send-mail", async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
+    console.log("📧 Email terkirim dari:", email);
     res.json({ success: true });
   } catch (err) {
+    console.error("❌ Gagal kirim email:", err.message);
     res.status(500).json({ error: err.message });
   }
 });
+
+// === Endpoint Kesehatan (Opsional untuk cek online) ===
 app.get("/health", (req, res) => {
   res.status(200).send("OK");
 });
+
 // === Jalankan Server ===
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server aktif dan mendengarkan di PORT ${PORT}`);
 });
 
+// === Penanganan Error Global ===
 process.on("uncaughtException", (err) => {
   console.error("❌ Uncaught Exception:", err);
 });
-
 process.on("unhandledRejection", (reason, promise) => {
   console.error("❌ Unhandled Rejection:", reason);
 });
