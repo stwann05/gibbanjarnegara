@@ -106,6 +106,14 @@ app.post("/send-mail", async (req, res) => {
 });
 
 // === Jalankan Server ===
-app.listen(PORT, () => {
-  console.log(`✅ Server berjalan di http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`✅ Server aktif dan mendengarkan di PORT ${PORT}`);
+});
+
+process.on("uncaughtException", (err) => {
+  console.error("❌ Uncaught Exception:", err);
+});
+
+process.on("unhandledRejection", (reason, promise) => {
+  console.error("❌ Unhandled Rejection:", reason);
 });
