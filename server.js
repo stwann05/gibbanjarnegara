@@ -121,7 +121,7 @@ app.get("/health", (req, res) => {
 
 // === Jalankan Server ===
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`✅ Server AKTIF berjalan di PORT ${PORT}`);
+  console.log(`✅ Server aktif berjalan di PORT ${PORT}`);
 });
 
 // === Penanganan Error Global ===
