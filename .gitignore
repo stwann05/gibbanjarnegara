@@ -1,8 +1,6 @@
 # Jangan upload folder modul
 node_modules/
 
-# Jangan upload file lingkungan rahasia
-.env
 
 # Jangan upload log atau cache
 npm-debug.log
